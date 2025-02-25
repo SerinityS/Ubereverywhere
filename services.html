@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - UberEverywhere</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -23,23 +24,27 @@
         </div>
     </header>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h1>Our Services</h1>
             <div class="service-list">
                 <div class="service-item">
+                    <i class="fas fa-car"></i>
                     <h3>Ride Hailing</h3>
                     <p>Book a ride instantly with our easy-to-use app. Available 24/7 for your convenience.</p>
                 </div>
                 <div class="service-item">
+                    <i class="fas fa-plane"></i>
                     <h3>Airport Transfers</h3>
                     <p>Reliable and timely airport transfers to ensure you never miss a flight.</p>
                 </div>
                 <div class="service-item">
+                    <i class="fas fa-briefcase"></i>
                     <h3>Corporate Travel</h3>
                     <p>Tailored transportation solutions for businesses and professionals.</p>
                 </div>
                 <div class="service-item">
+                    <i class="fas fa-road"></i>
                     <h3>Long-Distance Trips</h3>
                     <p>Comfortable and affordable rides for long-distance travel.</p>
                 </div>
@@ -52,8 +57,25 @@
             <h2>Contact Us</h2>
             <p>Email: info@ubereverywhere.co.za</p>
             <p>Phone: +27 123 456 789</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
             <p>&copy; 2023 Ubereverywhere.co.za. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
